@@ -1,0 +1,122 @@
+include includes/variables.jade
+include includes/mixins.jade
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title MOGO
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css')
+    link(href='css/style.css' rel='stylesheet')
+  body
+    .container
+      header.main-header
+        .grad
+          .container-inner.clearfix
+            span.header-logo MoGo
+            + main-navigation(links)
+            .header-title
+              span Creative Template
+              h1 Welcome to MOGO
+            a.btn.btn-learn(href='#') Learn more
+            + bottom-navigation(links2)
+      main
+        section.about
+          .container-inner
+            + section-title('What we do', 'Story about us')
+            p.main-description. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            + about(images)
+          .statistics
+            .container-inner
+              + stat-data(stats)
+        section.services.container-inner
+          + section-title('We work with', 'Amazing services')
+          + serv-item(services) 
+        section.devices   
+          + section-title('For all devices', 'Unique design')
+          img.ipad(src='' width= height= alt='ipad')
+          img.iphone(src='' width= height= alt='iphone')
+        section.whatwedo
+          .container-inner
+            + section-title('Service', 'What we do')
+            p.main-description.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            figure.whatwedo-photo
+              img(src='' width=20 height=30 alt='photo of our work')
+            form.whatwedo-form
+              + radio-item(radbtns)
+            .whatwedo-comment
+              .container-inner
+                + quotes('Jon Doe')
+        section.team
+          .container-inner
+            + section-title('Who we are', 'Meet our team') 
+            p.main-description.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            + team(members)
+          .sponsors
+            .container-inner
+              img(src='' width= height= alt='sponsors')
+        section.work.container-inner
+          + section-title('What we do', 'Some of our work') 
+          p.main-description.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .gallery.clearfix
+            .gallery-content.content-left
+              figure.img-1: img(src='' width= height= alt='photo-1')
+              figure.img-2: img(src='' width= height= alt='photo-2')
+            .gallery-content
+              figure.img-3: img(src='' width= height= alt='photo-3')
+              figure.img-4 
+                img(src='' width= height= alt='photo-4')
+                .img-descr 
+                  span.title creatively designed
+                  span.italic Lorem ipsum dolor sit
+            .gallery-content
+              figure.img-5: img(src='' width= height= alt='photo-5')
+            .gallery-content.content-right
+              figure.img-6: img(src='' width= height= alt='photo-6')
+              figure.img-7: img(src='' width= height= alt='photo-7')
+          .work-comment
+            a.prev
+            img(src='' width= height= alt='photo of autor')
+            + quotes('Joshua Earle')
+            a.next
+        section.clients
+          .container-inner
+            + section-title('Happy clients', 'What people say') 
+            + references(clients)           
+        section.blog.container-inner
+          + section-title('Our stories', 'Latest Blog') 
+          + blog(news)
+        section.map 
+          a(href='#') Open map
+      footer.contact.container-inner
+        .social 
+          span.footer-logo MoGo
+          p.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          .followers
+            span.howmuch 15k
+            span followers
+          .followus
+            span Follow Us:
+            + follow(btns)
+          form.email-form
+            input(type='text' name='email' placeholder='Your Email..')
+            button.btn.btn-email subscribe
+        .blogs
+          span.title Blogs
+          + blogs(records)
+        .instagram 
+          span.title Instagram 
+          + insta(pics)
+          span.italic.inst-italic View more photos
+        footer.copyright.container-inner
+          span © 2016 MoGo free PSD template by Laaqiq
+          
+        
+        
+            
