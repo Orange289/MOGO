@@ -20,10 +20,12 @@ h1{
 
 h2{
   font-family: 'Montserrat', 'Arial', sans-serif;
-  font-size: 700;
-  line-height: 525px;
+  font-size: 30px;
+  line-height: 0px;
   font-weight: 700;
   color: #333333;
+  text-transform: uppercase;
+  padding-bottom: 43px;
 }
 
 .clearfix::after{
@@ -40,6 +42,7 @@ h2{
 }
 
 .container-inner{
+  font-size: 0;
   width: 1200px;
   background-color: #ffffff;
   margin: 0 auto;
@@ -69,7 +72,7 @@ a{
 
 .main-header{
   color: #ffffff;
-  background: #eca986 url('..img/bg-heade.jpg') no-repeat;
+  background: #eca986 url('../img/bg-header.jpg') no-repeat;
 
 }
 
@@ -163,4 +166,66 @@ a{
   font-size: 18px;
   line-height: 14px;
   font-weight: 400;
+}
+
+/*main*/
+
+.main-title{
+  color: #333333;
+  display: block;
+  text-align: center;
+  margin-top: 96px;
+}
+
+.main-title span{
+  font-family: 'Kaushan Script', 'Myriad Pro', sans-serif;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.main-description{
+  font-family: 'Roboto' 'Arial' sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*about*/
+
+.about-img{
+  margin-left: 352px;
+  margin-top: 80px;
+}
+
+.main-img{
+  display: inline-block;
+  vertical-align: top;
+  width: 380px;
+  height: 250px;
+  margin-right: 30px;
+}
+
+.main-img:nth-of-type(3n){
+  margin-right: 330px;
+}
+
+.marked-img{
+  position: relative;
+  top: -10px;
+  margin-right: 40px;
+}
+
+.main-img .grad{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 250px;
+}
+
+.shadow-img{
+  box-shadow: 10px 10px 0 0 #95e1d3;
 }
